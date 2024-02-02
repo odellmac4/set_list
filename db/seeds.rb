@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+@brandy = Artist.create!(name: 'Brandy')
+@friend = @brandy.songs.create!(title: 'Best Friend', length: 180, play_count: 1000)
+@say = @brandy.songs.create!(title: 'Say You Will', length: 190, play_count: 900)
